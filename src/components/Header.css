@@ -6,7 +6,7 @@
   width:100vw;
   top:0;
   margin: 15px;
-  margin-top:15px;
+  margin-top:7px;
   z-index: 100;
 }
 .header__logo{
@@ -15,19 +15,58 @@
   margin-top: 7px;
 }
 .header__center{
+  margin-left:50px;
   flex: 1;
   display:flex;
   justify-content: center;
 }
-.header__center>p{
-  margin:10px;
+.header__center>p {
+  position:relative;
+  margin:8px;
   text-transform: uppercase;
 }
+
+.header__center>p:after,
+.header__right>p:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: black;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.header__center>p:hover:after,
+.header__right>p:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+@media screen and (max-height: 300px) {
+  .header__center>p {
+    margin-bottom: 40px;
+  }
+}
+
+
 .header__right{
   display:flex;
   justify-content: flex-end;
   text-transform: uppercase;
 }
 .header__right>p{
-  margin:10px;
+  position:relative;
+  margin:8px;
+  margin-right:40px;
+  margin-left:0;
+}
+.menu{
+  margin:6px;
+  margin-left:0;
+  margin-right:40px;
+  
 }

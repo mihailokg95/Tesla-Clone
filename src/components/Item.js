@@ -22,7 +22,7 @@ const Item = ({
     >
       <div className="item__container">
         <div className="item__text">
-          <p>{title}</p>
+          <h3>{title}</h3>
           <div className="item__textDesc">
             <p>{desc}</p>
           </div>
@@ -36,7 +36,7 @@ const Item = ({
           </div>
           {first && (
             <div className="item__expand">
-              <ExpandMoreIcon />
+              <ExpandMoreIcon style={{ fontSize: "3rem" }} className="bounce" />
             </div>
           )}
         </div>

@@ -1,5 +1,6 @@
 import "./Header.css";
 import TeslaLogo from "../assets/teslaLogoSmall.svg";
+import MenuIcon from "@material-ui/icons/Menu";
 const Header = () => {
   return (
     <div className="header">
@@ -17,6 +18,7 @@ const Header = () => {
       <div className="header__right">
         <p>Shop</p>
         <p>Tesla Account</p>
+        <MenuIcon className="menu" />
       </div>
     </div>
   );
