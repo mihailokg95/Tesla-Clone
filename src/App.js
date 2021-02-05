@@ -2,7 +2,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Item from "./components/Item";
 
-import Accessories from "./assets/Desktop-Accessories.jpg";
+//import Accessories from "./assets/Desktop-Accessories.jpg";
 import ModelS from "./assets/Desktop-ModelS.jpeg";
 import Model3 from "./assets/Desktop-Model3.jpeg";
 import ModelX from "./assets/Desktop-ModelX.jpeg";
