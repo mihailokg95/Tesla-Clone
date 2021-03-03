@@ -1,5 +1,5 @@
 # Tesla Clone App
-# Created for Educational purposes only
+# Cloned Design
 
 # Getting Started with Create React App
 
